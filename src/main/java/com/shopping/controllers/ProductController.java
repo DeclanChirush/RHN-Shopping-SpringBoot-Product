@@ -39,5 +39,10 @@ public class ProductController {
     public void update(@RequestBody Product product) {
         productService.update(product);
     }
+    
+    @GetMapping("/get-product/{id}")
+    public Product getById(@PathVariable String id) {
+        return productService.getById(id);
+    }
 
 }

@@ -28,4 +28,8 @@ public class ProductService {
     public void update(Product product) {
         productRepository.save(product);
     }
+    
+    public Product getById(String id) {
+    	return productRepository.findById(id).get();
+    }
 }
