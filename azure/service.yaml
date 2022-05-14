@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: prodcut-api-deployment
+spec:
+  type: LoadBalancer
+  selector:
+    app: prodcut-api
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+      name: http
