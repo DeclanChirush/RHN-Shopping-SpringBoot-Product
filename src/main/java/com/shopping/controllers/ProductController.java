@@ -1,5 +1,6 @@
 package com.shopping.controllers;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -44,5 +45,6 @@ public class ProductController {
     public Product getById(@PathVariable String id) {
         return productService.getById(id);
     }
+
 
 }
