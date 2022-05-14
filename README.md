@@ -1,11 +1,10 @@
 # CTSE - Assignment 3 - Product Items
 
 
-### EndPoints (Swagger) -  http://13.77.46.50:8080/
+### EndPoints :-
 
-<a target="_blank" href="http://13.77.46.50:8080/swagger-ui/">http://13.77.46.50:8080/swagger-ui/ </a>
-
-### EndPoints -  http://13.77.46.50:8080/api/product/seller
+- Localhost - <a target="_blank" href="http://13.77.46.50:8080/swagger-ui/">http://13.77.46.50:8080/swagger-ui/ </a>
+- RemoteHost - http://localhost:8080
 
 |       |       |
 | :-- | :-- |
