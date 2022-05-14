@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prodcut-api-deployment
+  labels:
+    app: prodcut-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prodcut-api
+  template:
+    metadata:
+      labels:
+        app: prodcut-api
+    spec:
+      containers:
+      - image: hirush99/prodcut-api:{{tag}}
+        name: prodcut-api
+        ports:
+          - containerPort: 8080
+        resources:
+          requests:
+            cpu: 0.2
+            memory: 200Mi
+          limits:
+            cpu: 0.4
+            memory: 350Mi
